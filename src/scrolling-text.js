@@ -18,7 +18,7 @@ export default function createWordSlider(containerNode, wordArr){
 
     console.log('word array ')
     console.log(wordArray)
-
+    slideIn(wordArray[0])
     setInterval(() => {
         console.log('setinterval runs')
         console.log('index '+index)
