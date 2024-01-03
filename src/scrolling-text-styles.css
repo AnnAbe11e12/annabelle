@@ -1,11 +1,7 @@
 
 
 .scroll-container{
-    max-width: 600px;
     position: relative;
-    
-    height:30px;
-
     overflow:hidden;
 }
 
