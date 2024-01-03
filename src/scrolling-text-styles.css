@@ -1,0 +1,39 @@
+
+
+.scroll-container{
+    max-width: 600px;
+    position: relative;
+    
+    height:30px;
+
+    overflow:hidden;
+}
+
+
+.scroll-text{
+    position:absolute;
+    left:200%;
+}
+
+
+.scroll-in {
+    animation-name: scrollIn;
+    animation-timing-function:cubic-bezier(0.45, 0.05, 0.72, 0.76);
+    animation-duration: 1.5s;
+}
+
+@keyframes scrollIn {
+    from {left: 100%} 
+    to {left: 0}
+}
+
+.scroll-out {
+    animation-name: scrollOut;
+    animation-timing-function: cubic-bezier(0.56, 0.13, 1, 1);
+    animation-duration: 1.5s;
+}
+
+@keyframes scrollOut {
+    from {left: 0} 
+    to {left: -200%}
+}
