@@ -4,7 +4,7 @@ let wordArray = [];
 let index=0;
 
 export default function createWordSlider(containerNode, wordArr){
-    console.log('createWordSlider runs')
+
     // set variables
     container = containerNode;
     wordArray = wordArr;
@@ -16,12 +16,8 @@ export default function createWordSlider(containerNode, wordArr){
         wordArray[i].classList.add('scroll-text')
     }
 
-    console.log('word array ')
-    console.log(wordArray)
     slideIn(wordArray[0])
     setInterval(() => {
-        console.log('setinterval runs')
-        console.log('index '+index)
 
     slideOut(wordArray[index])
         if(index>=wordArray.length-1){
@@ -35,18 +31,14 @@ export default function createWordSlider(containerNode, wordArr){
 
 // make element slide in
 function slideIn(node){
-    console.log('slide in runs')
     node.classList.remove('scroll-out')
-    console.log(node.style.left)
     node.classList.add('scroll-in')
-    console.log(node.style.left)
     
 }
 
 // make element slide out
 function slideOut(node){
     node.classList.remove('scroll-in')
-    console.log('slideout runs')
     node.classList.add('scroll-out')
     
 }
